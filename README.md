@@ -1,6 +1,6 @@
-[![NuGet](https://img.shields.io/nuget/dt/StringCommandParser.svg)](https://www.nuget.org/packages/StringCommandParser)
-[![NuGet](https://img.shields.io/nuget/v/StringCommandParser.svg)](https://www.nuget.org/packages/StringCommandParser)
-[![NuGet](https://img.shields.io/nuget/vpre/StringCommandParser.svg)](https://www.nuget.org/packages/StringCommandParser)
+[![NuGet](https://img.shields.io/nuget/dt/StringCommandParser.svg?style=for-the-badge)](https://www.nuget.org/packages/StringCommandParser)
+[![NuGet](https://img.shields.io/nuget/v/StringCommandParser.svg?style=for-the-badge)](https://www.nuget.org/packages/StringCommandParser)
+[![NuGet](https://img.shields.io/nuget/vpre/StringCommandParser.svg?style=for-the-badge)](https://www.nuget.org/packages/StringCommandParser)
 
 # StringCommandParser for .Net 5.0
 

@@ -13,12 +13,12 @@ namespace StringCommandParser
         /// <summary>
         /// Declared types for classes that contain commands
         /// </summary>
-        internal Type[] Types { get; set; }
+        public Type[] Types { get; set; }
 
         /// <summary>
         /// The response of the parser
         /// </summary>
-        internal ParserResult Result { get; set; }
+        public ParserResult Result { get; set; }
 
         /// <summary>
         /// Parses a command in string form by checking against known verbs, which are classes decorated using <see cref="VerbAttribute"/>.

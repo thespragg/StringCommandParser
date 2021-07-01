@@ -48,9 +48,8 @@ var args = input.Split(" ");
 var help = parser.ParseArgs<Debug>(args) //Multiple types can be provided here <T1,T2,T3...etc>
 			.ExecuteMethod(x =>
             {
-	            //Lambda is used here to allow for role processing etc, e.g:
-				if(!isAdmin && x.Verb == "Admin") return false;
-				
+	        //Lambda is used here to allow for role processing etc, e.g:
+		if(!isAdmin && x.Verb == "Admin") return false;
 	            
                 x.Method.Invoke(null, x.Args); //If the method isn't static, replace null with an instance of the class
                 return true;

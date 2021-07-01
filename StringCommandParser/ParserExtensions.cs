@@ -16,7 +16,7 @@ namespace StringCommandParser
         /// <param name="parser"></param>
         /// <param name="func"></param>
         /// <returns></returns>
-        public static Parser ExecuteMethod(this Parser parser, Func<ParserResult, bool> func)
+        public static IParser ExecuteMethod(this IParser parser, Func<ParserResult, bool> func)
         {
             if (parser.Result.Method == null) return parser;
             var argCount = parser.Result.Method.GetParameters().Length;
@@ -32,9 +32,9 @@ namespace StringCommandParser
         /// </summary>
         /// <param name="parser"></param>
         /// <returns></returns>
-        public static string CatchParseError(this Parser parser) => parser.Result.Parsed ? "" : GenerateHelp(parser);
+        public static string CatchParseError(this IParser parser) => parser.Result.Parsed ? "" : GenerateHelp(parser);
 
-        private static string GenerateHelp(Parser parser)
+        private static string GenerateHelp(IParser parser)
         {
             if (parser.Result.Verb != null) return GenerateHelpForVerb(parser.Result.Verb);
             return GenerateAllHelp(parser.Types);

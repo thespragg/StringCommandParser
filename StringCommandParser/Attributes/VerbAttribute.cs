@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace StringCommandParser
+namespace StringCommandParser.Attributes
 {
     class VerbAttribute : Attribute
     {

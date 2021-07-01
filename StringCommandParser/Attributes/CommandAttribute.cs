@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace StringCommandParser
+namespace StringCommandParser.Attributes
 {
     /// <summary>
     /// Attribute for usage on methods used by the parser
